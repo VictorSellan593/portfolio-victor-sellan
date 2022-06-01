@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <title>Victor Sellan - Portfolio</title>
+</head>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <main>
+    <nav class="nav" id="nav">
+      <div class="nav__name">
+        <a href="#">Victor S.</a>
+      </div>
+      <div class="nav__items" id="nav__items">
+        <a href="#secction__inicio"" class=" nav__item link" id="link_inicio">INICIO</a>
+        <a href="#secction__sobre_mi" class="nav__item link" id="link_about">SOBRE MÍ</a>
+        <a href="#secction__skills" class="nav__item link" id="link_skill">SKILLS</a>
+        <a href="#secction__estudios" class="nav__item link" id="link_studios">ACADÉMICO</a>
+        <a href="#secction__contacto" class="nav__item link" id="link_contacto">CONTACTO</a>
+        <button class="theme-btn light nav__item" onclick="setTheme('light')" title="Light mode">
+          <i class="uil uil-sun"></i></button>
+        <button class="theme-btn dark nav__item" onclick="setTheme('dark')" title="Dark mode">
+          <i class="uil uil-moon"></i>
+        </button>
+      </div>
+      <div class="nav__menu">
+        <a href="#" class="nav__meni_item" id="icon_hamburguer"><i class="uil uil-bars"></i></a>
+        <a href="#" class="nav__meni_item" id="icon_close"><i class="uil uil-multiply"></i></a>
+      </div>
+    </nav>
+    <section class="sec__inicio" id="secction__inicio">
+      <div class="container">
+        <div class="content__img">
+          <img src="img_profile_vsa.jpeg" alt="" />
+        </div>
+        <div class="saludo">
+          <h1 class="title_saludo">Hola, Soy Victor</h1>
+          <h3>Estudiante universitario</h3>
+          <p class="descrip__saludo">
+            Autodidacta en el diseño web con ganas de emprender nuevos proyectos y ampliar mis conocimientos, así como mi experiencial laboral.
+          </p>
+          <button class="btn__principal"><a href="#secction__contacto">Contáctame</a><i
+              class="uil uil-message"></i></button>
+        </div>
+
+      </div>
+      <div class="icons__inicio" style="display:flex; align-items:center;justify-content: space-between;">
+        <div style="display:flex; align-items:center; gap: 1rem;">
+          <i class="uil uil-mouse-alt icon"></i>
+          <p>Scroll down</p>
+          <i class="uil uil-arrow-down icon"></i>
+        </div>
+      </div>
+    </section>
+    <section class="sec__container" id="secction__sobre_mi">
+      <div class="tittle_descrip">
+        <h1>Sobre mí</h1>
+        <h5>Mi información</h5>
+      </div>
+      <div class="body__secction">
+        <div class="text__about_me">
+          <p>Persona con ganas de superación, emprender y desarrollarse como profesional en al ámbito de sistemas computacionales capaz de aprender y ejecutar varias tecnologías para la solución de problemas y automatización de procesos.</p>
+          <button class="btn__principal"><a
+              href="https://ugye-my.sharepoint.com/:b:/g/personal/victor_sellana_ug_edu_ec/EZiBliSO-9FDnqEwl4CHKS4BTuWUzZ64d2HkVjImJjlpOA?e=g0Vs7N"
+              target="_blank">Descarga mi CV &nbsp;</a><i class="uil uil-import"></i></i>
+          </button>
+        </div>
+        <div class="content__img_about_me">
+          <img src="img_about_me_resize.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!----------------------------SKILLS------------------------->
+    <section class="sec__container" id="secction__skills">
+      <div class="tittle_descrip">
+        <h1>Skills</h1>
+        <h5>Mis Habilidades</h5>
+      </div>
+      <div class="body__secction">
+        <div class="content__skills">
+          <div class="head__skill">
+            <i class="uil uil-brackets-curly icon"></i>
+            <h3>Frontend Developer</h3>
+            <i class="uil uil-angle-up icon" id="iconfrontend_up"></i>
+          </div>
+          <div class="container_body" id="container_fonrtend">
+            <div class="body__skill" id="body_frontend">
+              <div class="skill__item">
+                <div class="skill__text">
+                  <h4>Html</h4>
+                  <h4>90%</h4>
+                </div>
+                <div class="skill__bar">
+                  <div id="bar_html" class="item_bar"></div>
+                </div>
+              </div>
+              <div class="skill__item">
+                <div class="skill__text">
+                  <h4>Css</h4>
+                  <h4>80%</h4>
+                </div>
+                <div class="skill__bar">
+                  <div id="bar_css" class="item_bar"></div>
+                </div>
+              </div>
+              <div class="skill__item">
+                <div class="skill__text">
+                  <h4>Javascript</h4>
+                  <h4>50%</h4>
+                </div>
+                <div class="skill__bar">
+                  <div id="Js_bar" class="item_bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__skills">
+          <div class="head__skill">
+            <i class="uil uil-server-network icon"></i>
+            <h3>Backend Developer</h3>
+            <i class="uil uil-angle-up icon" id="iconbackend_up"></i>
+          </div>
+          <div class="container_body">
+            <div class="body__skill" id="body_backend">
+              <div class="skill__item">
+                <div class="skill__text">
+                  <h4>MySQL</h4>
+                  <h4>90%</h4>
+                </div>
+                <div class="skill__bar">
+                  <div id="MySQL_bar" class="item_bar"></div>
+                </div>
+              </div>
+              <div class="skill__item">
+                <div class="skill__text">
+                  <h4>Firebase</h4>
+                  <h4>50%</h4>
+                </div>
+                <div class="skill__bar">
+                  <div id="Firebase_bar" class="item_bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content__skills">
+          <div class="head__skill">
+            <i class="uil uil-desktop icon"></i>
+            <h3>Software Developer</h3>
+            <i class="uil uil-angle-up icon" id="iconsoftware_up"></i>
+          </div>
+          <div class="container_body">
+            <div class="body__skill" id="body_software">
+              <div class="skill__item">
+                <div class="skill__text">
+                  <h4>C#</h4>
+                  <h4>70%</h4>
+                </div>
+                <div class="skill__bar">
+                  <div id="C_bar" class="item_bar"></div>
+                </div>
+              </div>
+              <div class="skill__item">
+                <div class="skill__text">
+                  <h4>Java</h4>
+                  <h4>70%</h4>
+                </div>
+                <div class="skill__bar">
+                  <div id="Java_bar" class="item_bar"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!----------------------------ESTUDIOS------------------------->
+    <section class="sec__container" id="secction__estudios">
+      <div class="tittle_descrip">
+        <h1>Académico</h1>
+        <h5>Estudios realizados</h5>
+      </div>
+      <div class="body__secction" style="gap:0">
+        <div class="row__estudio row__reverse">
+          <div class="container__item__estudio row__reverse">
+            <div class="item__estudio justificar__der">
+              <h3>Universidad de Guayaquil</h3>
+              <p>Ingeniería en Sistemas Computacionales</p>
+              <p>Cursando </p>
+            </div>
+            <div class="h__line"></div>
+          </div>
+          <div class="v__line"><div class="circle"></div></div>
+          <div class="relleno"></div>
+        </div>
+        <div class="row__estudio">
+          <div class="relleno"></div>
+          <div class="v__line"><div class="circle"></div></div>
+          <div class="container__item__estudio">
+            <div class="h__line"></div>
+            <div class="item__estudio">
+              <h3>Curso Online Microsoft Excel</h3>
+              <p>Universidad de Guayaquil</p>
+              <p>2022 <a href="https://ugye-my.sharepoint.com/:b:/g/personal/victor_sellana_ug_edu_ec/EYO8GdGAh8ZLqIMs76fflUUBwG9xjftxSHjz1QI6OaV7UQ?e=uf3Zux" target="_blank"><i class="uil uil-external-link-alt"></i></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row__estudio row__reverse">
+          <div class="container__item__estudio row__reverse">
+            <div class="item__estudio justificar__der">
+              <h3>Webinar Desafíos informáticos </h3>
+              <p>Universidad de Guayaquil</p>
+              <p>2021 <a href="https://ugye-my.sharepoint.com/:b:/g/personal/victor_sellana_ug_edu_ec/EcoPfMH9H4ZNvOelpU7-8soBt5DrSRPtIyiXVN7TWtWRlA?e=L7fO7n" target="_blank"><i class="uil uil-external-link-alt"></i></a></p>
+            </div>
+            <div class="h__line"></div>
+          </div>
+          <div class="v__line"><div class="circle"></div></div>
+          <div class="relleno"></div>
+        </div>
+        <div class="row__estudio">
+          <div class="relleno"></div>
+          <div class="v__line"><div class="circle"></div></div>
+          <div class="container__item__estudio">
+            <div class="h__line"></div>
+            <div class="item__estudio">
+              <h3>Academia Naval Almirante Illingworth</h3>
+              <p>Bachiller Técnico en Administración de Sistemas</p>
+              <p>2016 <a href="https://ugye-my.sharepoint.com/:b:/g/personal/victor_sellana_ug_edu_ec/EXEKaAo4HBNOg8Ff3XDy9qQB8rM5VCpclrrBKQaWPVSSrQ?e=pwJRab" target="_blank"><i class="uil uil-external-link-alt"></i></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sec__container" id="secction__contacto">
+      <div class="tittle_descrip">
+        <h1>Contacto</h1>
+        <h5>Descriptcion</h5>
+      </div>
+      <div class="body__secction">
+        <div class="sec__contacto">
+          <form action="https://formsubmit.co/victor.sellana@ug.edu.ec" method="POST" class="form_contact">
+            <input type="text" name="nombre" placeholder="Nombre" required autocomplete='off'>
+            <input type="email" name="email" placeholder="Correo electrónico" required autocomplete='off'>
+            <input type="text" name="asunto" placeholder="Asunto" required autocomplete='off'>
+            <textarea name="comments" id="" cols="30" rows="3" placeholder="Mensaje..."></textarea>
+            <button type="submit" class="btn__principal">Enviar email<i class="uil uil-message"></i></button>
+          </form>
+        </div>
+        <div class="sec__contacto">
+          <div class="item__contacto">
+            <i class="uil uil-mobile-android icon"></i>
+            <div>
+              <h3>Llamamé</h3>
+              <strong><a target="_blank" href="https://wa.me/593963034945">096 303 4945</a></strong>
+            </div>
+          </div>
+          <div class="item__contacto">
+            <i class="uil uil-envelope icon"></i>
+            <div>
+              <h3>Correo electrónico</h3>
+              <p>victor.sellana@ug.edu.ec</p>
+            </div>
+          </div>
+          <div class="item__contacto">
+            <i class="uil uil-map-marker icon"></i>
+            <div>
+              <h3>Ubicación</h3>
+              <p>Guayaquil - Ecuador</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <footer>
+      <p>Victor Sellan Portfolio - 2022</p>
+    </footer>
+  </main>
+  <script src="main.js"></script>
+
+</body>
+
+</html>
